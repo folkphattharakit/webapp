@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+
+    <style>
+        .box {
+            background-color: rgba(104, 195, 255, 0.767);
+            width: 80%;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        body {
+            background-image: url(https://t3.ftcdn.net/jpg/02/94/52/66/360_F_294526635_8Fc9IbBHWOC83JsiFNRNx5VivafEjiyi.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <form action="" method="post">
+            <h2>ข้อมูลนักศึกษา</h2>
+
+            Firstname: <input type="text" name="firstname" /><br />
+            Lastname: <input type="text" name="lastname" /><br /><br />
+
+            <label>Gender:</label><br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">female</label><br /><br>
+
+            <label for="">สาขาที่เรียน</label><br />
+            <select name="product">
+                <option value="it">IT</option>
+                <option value="cs">CS</option>
+                <option value="math">MATH</option>
+                <option value="dcs">DCS</option>
+                <option value="bio">BIO</option>
+            </select><br><br>
+
+            <label for="birthday">Birthday:</label><br />
+            <input type="date" id="birthday" name="birthday" /><br /><br />
+
+            <label>วิชาที่ชอบ :</label><br />
+            <input type="checkbox" id="math" name="subjects" value="math" />
+            <label for="math">คณิตศาสตร์</label><br />
+
+            <input type="checkbox" id="sci" name="subjects" value="sci" />
+            <label for="pe">วิทยาศาสตร์</label><br />
+
+            <input type="checkbox" id="art" name="subjects" value="art" />
+            <label for="art">ศิลปะ</label><br />
+
+            <input type="checkbox" id="pe" name="subjects" value="pe" />
+            <label for="pe">พละศึกษา</label><br />
+
+            <br><br>
+            <div style="text-align: center;">
+                <input type="submit" value="Submit Info" style="padding: 10px 20px; cursor: pointer;">
+                <input type="reset" value="clear"
+                    style="padding: 10px 20px; cursor: pointer; background-color: #1027f8; color: white; border: none; border-radius: 5px;">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
